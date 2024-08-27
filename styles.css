@@ -1,0 +1,171 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #1E2A32;
+    box-sizing: border-box;
+}
+
+body.light-mode {
+    background-color: #FAFAFA;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2B3743;
+    align-items: center;
+    color: aliceblue;
+    padding: 0px 40px;
+}
+
+body.light-mode header {
+    background-color: white;
+    color: black;
+}
+
+main {
+    padding: 20px 40px;
+}
+
+#mode-button {
+    background: none;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+body.light-mode #mode-button {
+    color: black;
+}
+
+#mode-button i {
+    padding-right: 10px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+input {
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+body.light-mode input {
+    background-color: white;
+    color: black;
+}
+
+.search-input {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(209, 23%, 22%);
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    align-items: center;
+
+}
+
+body.light-mode .search-input {
+    color: black;
+    background-color: white;
+}
+
+.search-input::placeholder {
+    color: hsl(0, 0%, 80%);
+}
+
+body.light-mode .search-input::placeholder {
+    color: black;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode select {
+    background-color: white;
+    color: black;
+    box-shadow: white;
+}
+
+#countries-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.country-card {
+    background-color: #2B3743;
+    border-radius: 5px;
+    overflow: hidden;
+
+    transition: transform 0.2s;
+}
+
+body.light-mode .country-card {
+    background-color: white;
+}
+
+.country-card:hover {
+    transform: translateY(-10px);
+}
+
+.country-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+}
+
+.info h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: white;
+}
+
+body.light-mode .info h3,
+.info p {
+    color: black;
+}
+
+.info p {
+    margin: 5px 0px;
+    font-size: 14px;
+    color: white;
+}
+
+@media (max-width:750px) {
+    input {
+        width: 300px;
+        margin-bottom: 20pxsss;
+    }
+
+    .search {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    select {
+        width: 200px;
+        margin-top: 20px;
+    }
+}
