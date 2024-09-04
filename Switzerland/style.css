@@ -1,0 +1,57 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #1E2A32;
+    box-sizing: border-box;
+}
+
+body.light-mode {
+    background-color: #FAFAFA;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2B3743;
+    align-items: center;
+    color: aliceblue;
+    padding: 0px 40px;
+}
+
+body.light-mode header {
+    background-color: white;
+    color: black;
+}
+
+main {
+    padding: 20px 40px;
+}
+
+#mode-button {
+    background: none;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+body.light-mode #mode-button {
+    color: black;
+}
+
+#mode-button i {
+    padding-right: 10px;
+}
+#flag{
+    width: 45%;
+    height: 50%;
+    position: fixed;
+    top: 33%;
+    left: 5%;
+
+}
+#backk{
+    position: fixed;
+    left: 50px;
+    width: 80px;
+}
