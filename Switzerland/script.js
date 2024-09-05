@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (body.classList.contains('light-mode')) {
             modeButton.innerHTML = '<i class="far fa-moon"></i> Dark Mode';
         } else {
-            modeButton.innerHTML = '<i class="fas fa-moon"></i> Light Mode';
+            modeButton.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
         }
     };
 

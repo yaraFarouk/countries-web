@@ -24,7 +24,10 @@ body.light-mode header {
 }
 
 main {
-    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    padding:2% 15% ;
+    height: 20%;
 }
 
 #mode-button {
@@ -43,15 +46,111 @@ body.light-mode #mode-button {
     padding-right: 10px;
 }
 #flag{
-    width: 45%;
-    height: 50%;
-    position: fixed;
-    top: 33%;
-    left: 5%;
+    width: 40%;
+    height: 20%;
+    
+    
 
 }
-#backk{
-    position: fixed;
+#backk button {
+    position: relative;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     left: 50px;
     width: 80px;
+}
+/* #backk{
+    position: relative;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    left: 50px;
+    width: 80px;
+} */
+.main-info
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#country-details{
+    display: flex;
+    
+    justify-content: space-between;
+    flex-direction: column;
+}
+strong{
+    color: #FAFAFA;
+}
+span{
+    color: rgb(204, 212, 218);
+}
+h2{
+    color: white;
+    padding-left: 5%;
+}
+
+body.light-mode strong{
+    color: black;
+}
+body.light-mode span{
+    color: rgb(92, 94, 97);
+}
+body.light-mode h2{
+    color: black;
+}
+.info1 {
+    padding-right: 10%;
+    padding-left: 5%;
+}
+.info2 {
+    padding-right: 10%;
+    padding-left: 5%;
+}
+#border-countries button{
+    padding: 10px;
+    margin: 2%;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    left: 50px;
+    width: 80px;
+}
+body.light-mode #border-countries button {
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 4px white;
+}
+body.light-mode #backk button {
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 4px white;
+}
+
+@media (max-width:750px){
+    .main-info
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+main {
+    display: flex;
+    flex-direction: column;
+   
+}
+#flag{
+    width: 100%;
+}
 }

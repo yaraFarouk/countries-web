@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Details</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -19,16 +21,22 @@
         <img id="flag" alt="Country Flag">
         <div id="country-details">
             <h2 id="country-name"></h2>
-            <p><strong>Native Name:</strong> <span id="native-name"></span></p>
+            <div class="main-info">
+               
+            <div class="info1"><p>
+            <strong>Native Name:</strong> <span id="native-name"></span></p>
             <p><strong>Population:</strong> <span id="population"></span></p>
             <p><strong>Region:</strong> <span id="region"></span></p>
             <p><strong>Sub Region:</strong> <span id="sub-region"></span></p>
             <p><strong>Capital:</strong> <span id="capital"></span></p>
-            <p><strong>Languages:</strong> <span id="languages"></span></p>
+            
+            </div>
+            <div class="info2"><p><strong>Top Level Domain:</strong> <span id="top-level-domain"></span></p>
             <p><strong>Currencies:</strong> <span id="currency"></span></p>
-            <p><strong>Top Level Domain:</strong> <span id="top-level-domain"></span></p>
-            <p><strong>Flag:</strong> <img id="flag" src="" alt="Country Flag"></p>
-            <div id="border-countries"><strong>Border Countries:</strong></div>
+            <p><strong>Languages:</strong> <span id="languages"></span></p>
+            </div>
+            </div>
+            <div id="border-countries"></div>
         </div>
     </main>
 
